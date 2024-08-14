@@ -1,0 +1,7 @@
+<h1 class="text-3xl font-bold">{{title}}</h1>
+<p>{{dataFromChild}}</p>
+<p>Counter: {{counter}}</p>
+<app-child
+  [(counter)]="counter"
+  (sayHello)="sayHello($event)"
+  dataFromParent="Hello from Parent"></app-child>

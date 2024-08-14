@@ -1,0 +1,80 @@
+<app-header></app-header>
+<app-toast></app-toast>
+
+<main id="hero" class="relative -top-20">
+  <router-outlet></router-outlet>
+</main>
+
+<app-footer></app-footer>
+
+
+<!--<div class="container mx-auto mt-5">-->
+<!--  <h1 class="tes-2xl font-bold text-center">{{title}}</h1>-->
+<!--  <div class="flex gap-2">-->
+<!--    <div class="w-1/2 p-4">-->
+<!--      &lt;!&ndash; String Interpolation &ndash;&gt;-->
+<!--      <h3>{{4 + 5}}</h3>-->
+<!--      <p>{{people}}</p>-->
+<!--      <p>{{getPeople()}}</p>-->
+<!--      <hr>-->
+
+
+<!--      &lt;!&ndash; Looping in angular 18 &ndash;&gt;-->
+<!--      <ul>-->
+<!--        <h2>List Trainers 18</h2>-->
+<!--        @for(trainer of bootcampTrainers; track $index){-->
+<!--          <li>{{trainer.name}} || {{trainer.address}}</li>-->
+<!--        }-->
+<!--      </ul>-->
+<!--      <hr>-->
+
+<!--      &lt;!&ndash; looping in angular 14 &ndash;&gt;-->
+<!--      <ul>-->
+<!--        <h1>List Trainers 14</h1>-->
+<!--        <li *ngFor="let trainer of bootcampTrainers; let i = index; let last = last; let first = first">-->
+<!--          {{i + 1}}||{{trainer.name}}-->
+<!--        </li>-->
+<!--      </ul>-->
+<!--      <hr>-->
+
+<!--      &lt;!&ndash; Properties Binding &ndash;&gt;-->
+<!--      <img [src]="imageSrc.url" [alt]="imageSrc.alt" class="w-full"/>-->
+<!--      <hr>-->
+<!--    </div>-->
+<!--    <div class="w-1/2 p-4">-->
+<!--    &lt;!&ndash; Event Binding &ndash;&gt;-->
+<!--      <button class="btn btn-primary mt-3" (click)="onClick()">Click</button>-->
+<!--      <p>{{isCLicked ? "Clicked" : "Not Click"}}</p>-->
+<!--      <hr>-->
+
+<!--      <div class="flex flex-col">-->
+<!--        <label class="font-bold">Full Name</label>-->
+<!--        <input-->
+<!--         class="p-2 border border-1 border-slate-500 rounded"-->
+<!--         placeholder="Input your fullname"-->
+<!--         (input)="onChange($event)"-->
+<!--        />-->
+<!--        <p class="mt-2">{{fullName}}</p>-->
+<!--      </div>-->
+
+<!--&lt;!&ndash;   Directive   &ndash;&gt;-->
+<!--&lt;!&ndash;   [()] Two way data binding   &ndash;&gt;-->
+<!--      <div class="flex flex-col">-->
+<!--        <label>First Name with Directive</label>-->
+<!--        <input-->
+<!--         class="border border-1 border-slate-500 p-2 rounded"-->
+<!--         type="text"-->
+<!--         placeholder="Input tour firstname"-->
+<!--         [(ngModel)]="firstName"-->
+<!--        />-->
+<!--        <p>{{firstName}}</p>-->
+<!--      </div>-->
+
+<!--&lt;!&ndash;   Sharing data between component   &ndash;&gt;-->
+<!--      <app-parent></app-parent>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--</div>-->
+
+<!--<app-todos></app-todos>-->

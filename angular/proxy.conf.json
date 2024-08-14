@@ -1,0 +1,10 @@
+{
+  "/api": {
+    "target": "http://146.190.109.40:8888/api/v1/",
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/api/v1": ""
+    },
+    "logLevel": "debug"
+  }
+}

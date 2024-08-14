@@ -1,0 +1,17 @@
+<div class="p-28 transition-colors duration-300 dark:bg-gray-950">
+  <h1
+    class="relative text-3xl font-bold uppercase text-center dark:text-white
+           after:absolute after:content-[''] after:h-1 after:w-8 after:bg-blue-900 after:-bottom-2 after:left-[50%] after:transform after:-translate-x-[50%]"
+  >Todo</h1>
+  <p class="text-center dark:text-white mt-2">{{currDate | dateCustom: 'eeee, dd MMMM yyyy' : locale}}</p>
+  <div class="flex gap-4 mt-3 dark:text-white">
+    <div class="w-1/2">
+      <app-todo-list
+      ></app-todo-list>
+    </div>
+    <div class="w-1/2">
+      <app-todo-form
+      ></app-todo-form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist",
+    "tsc": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Muhammad Yudha Adi Pratama",
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^7.8.1"
+  }
+}
